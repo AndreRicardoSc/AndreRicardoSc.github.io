@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+/*========================================================================
+                           GERAL
+==========================================================================*/
+html {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: calc(10px + 1vw);
+   color: white;
+   background: #323232;
+}
+a {
+   color: black;
+   text-decoration: none;
+}
+a.atual{
+	color: white;
+	font-weight: bold;
+}
+section{
+	padding: 0 10vw 0 10vw;
+}
+
+/*=======================================================================
+                           INTRODUÇÃO
+==========================================================================*/
+header img {
+	width: 100%;
+	height: 100%;
+	border-bottom: solid 2px white;
+}
+header img.logo{
+	border-bottom: none;
+	width: 4rem; 
+	animation: logo-animation 1s;
+}
+@keyframes logo-animation{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+		width: 5rem;
+	}
+	100%{
+		transform: rotate(360deg);
+		width: 4rem;
+	}
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+    background-color: #00ffba;
+}
+header nav ul li{
+    margin: 3vw 0 3vw 0;
+}
+header nav ul li a{
+	font-size: 1.5re;
+	color: black;
+	font-size: 25px;
+}
+header nav ul li p{
+	color: black;
+	font-size: 15px;
+}
+section.introducao h1{
+	font-weight: bold;
+	text-align: center;
+	margin: 5vw;
+    font-size: 1.8rem;
+}
+section.introducao ul {
+	display: flex;
+	background: #00ffba;
+    border-radius: 15px;
+    padding: 2vw;
+}
+
+section.introducao ul li {
+	color: black;
+	background: white;
+	margin: 2vw 1vw 2vw 0;
+	padding: 2vw;
+	border-radius: 15px;
+}
+section.direction nav button{
+	margin: 5vw 0 0 30vw;
+	font-size: 1rem;
+	width: 10rem;
+	height: 3rem;
+	background: #00ffba;
+	border-radius: 15px;
+	border: none;
+}
+/*=======================================================================
+                           CRIA-TREINO-OBJETIVOS
+==========================================================================*/
+section.invite-ct h2{
+	text-align: center;
+	font-weight: bold;
+	color: #00ffba;
+	margin: 0 0 2vw 0;
+}
+section.invite-ct div.nosso{
+	display: flex;
+	margin: 0 0 3vw 0;
+}
+section.invite-ct div p{
+	margin: 2vw 3vw 2vw 0;
+}
+section.invite-ct div.aviso{
+	background: #00ffba;
+	border-radius: 15px;
+	color: black;
+	padding: 2vw;
+	text-align: center;
+	margin: 4vw 0 4vw 0;
+}
+section.invite-ct div.aviso h1{
+	text-align: center;
+	font-weight: bold;
+	margin: 2vw;
+}
+
+/*=======================================================================
+                           SOBRE-EXERCICIOS
+==========================================================================*/
+section.geral-exercicios{
+	margin: 4vw 3vw 4vw 3vw;
+}
+section.geral-exercicios p{
+	margin: 1vw 0 1vw 0;
+	color: black;
+	text-align: justify;
+	background-color: #00ffba;
+	border: #00ffba;
+	border-radius: 20px;
+	padding: 30px;
+}
+section.informativo{
+	margin: 4vw 0 0 0;
+}
+section.informativo ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0 50px 0;
+	border-bottom: 1px solid gray;
+	padding: 0 0 3vw 0;
+}
+section.informativo ul li.no-border{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0 50px 0;
+	border-bottom: none;
+	padding: 0 0 3vw 0;
+}
+
+section.informativo ul li div{
+	margin: 0 4vw 0 0;
+}
+section.informativo ul li div img{
+	width: 500px;
+	height: 330px;
+	border: solid;
+	border-radius: 50px;
+	border-color: #00ffba;
+	
+}
+section.informativo ul li h2{
+	color: #00ffba;
+	font-weight: bold;
+	text-align: center;
+	margin: 1vw 0 2vw 0;
+}
+/*=======================================================================
+                           ALIMENTAÇÃO-CONCEITOS-DIETA
+==========================================================================*/
+section.conceitos-dieta{
+	margin: 4vw 3vw 4vw 3vw;
+	border-bottom: solid 2px white;
+}
+section.conceitos-dieta h1{
+	margin: 4vw 0 4vw 0;
+	color: #00ffba;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+section.conceitos-dieta p{
+	margin: 2vw 0 2vw 0;
+}
+section.conceitos-dieta ul{
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+section.conceitos-dieta ul li{
+	border: solid #00ffba;
+	border-radius: 10px;
+	margin: 2vw 1vw 2vw 1vw;
+	padding: 2vw;
+}
+section.conceitos-dieta ul li h2{
+	font-size: 1rem;
+	color: #00ffba;
+	font-weight: bold;
+}
+section.conceitos-dieta ul li img{
+	width: 20vw;
+	height: 13vw;
+	margin: 2vw 0 0 0;
+	border-radius: 10px;
+	border: solid #00ffba;
+}
+/*=======================================================================
+                           ALIMENTAÇÃO-DICAS-DIETA
+==========================================================================*/
+section.dicas-dieta h1{
+	color: #00ffba;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+section.dicas-dieta p{
+	margin: 2vw 0 2vw 0;
+}
+section.dicas-dieta h2{
+	font-size: 1rem;
+	color: #00ffba;
+	font-weight: bold;
+}
+/*=======================================================================
+                           DICAS-INTRODUCTION
+==========================================================================*/
+section.introduction{
+	margin: 4vw 3vw 4vw 3vw;
+}
+section.introduction h1{
+	margin: 4vw 0 4vw 0;
+	color: #00ffba;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+section.introduction p{
+	margin: 2vw 0 2vw 0;
+}
+/*=======================================================================
+                           DICAS-DUVIDAS
+==========================================================================*/
+section.duvidas{
+	margin: 0 3vw 0 3vw;
+}
+section.duvidas h2{
+	color: #00ffba;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+section.duvidas p{
+	margin: 2vw 0 2vw 0;
+}
+section.duvidas img{
+	border: solid #00ffba;
+	border-radius: 10px;
+	width: 30vw;
+	height: 20vw;
+	margin: 2vw 0 2vw 0;
+}
+section.duvidas p span{
+	color: #00ffba;
+	font-weight: bold;
+}
+section.duvidas ul{
+	display: flex;
+	justify-content: space-between;
+}
+section.duvidas ul li{
+	margin: 0 2vw 3vw 0;
+	padding: 3vw;
+	border: solid #00ffba;
+	border-radius: 10px;
+}
+section.duvidas ul li h3{
+	text-align: center;
+	color: #00ffba;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+section.duvidas > div{
+	display: flex;
+	justify-content: center;
+}
+section.duvidas div{
+	margin: 0 4vw 0 1.5vw;
+}
+/*=======================================================================
+                           REFERENCIAS
+==========================================================================*/
+section.referencias{
+	margin: 2vw 0 2vw 0;
+}
+section.referencias div.texto{
+	border: #00ffba solid;
+	border-radius: 25px;
+	padding: 4vw;
+	flex-wrap: wrap;
+}
+section.referencias h1{
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 2vw 0 2vw 0;
+}
+section.referencias p{
+	margin: 2vw 0 2vw 0;
+}
+section.referencias p a{
+	color: white;
+}
+/*=======================================================================
+                           SOBRE-NÓS
+==========================================================================*/
+section.sobre{
+	margin: 4vw 0 0 0 ;
+}
+section.sobre p{
+	margin: 2vw 0 2vw 0;
+}
+section.sobre h2{
+	font-size: 2rem;
+	font-weight: bold;
+	color: #00ffba;
+	margin: 4vw 0 2vw 0;
+}
+/*=======================================================================
+                           FOOTER
+==========================================================================*/
+footer {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	margin: 5vw 0 0 0;
+	padding: 0 10vw 0 10vw; ;
+	background: #323232;
+	border-top: solid 2px white;
+	height: 15vw
+}
+footer{
+	height: 10vw;
+}
+footer i.fa-dumbbell{
+	margin: 8vw 0 0 0;
+	animation: alter-inicio 2s infinite;
+}
+@keyframes alter-inicio{
+	0%{
+		margin: 8vw 0 0 0;
+	}
+	50%{
+		margin: 0;
+		font-size: 1rem;
+		transform: rotate(360deg);
+	}
+	100%{
+		margin: 8vw 0 0 0;
+	}
+}
+footer p {
+	font-size: 15px;
+	margin: 3vw 5vw 3vw 5vw;
+	
+}
+footer p a{
+	margin: 0 1vw 0 1vw;
+	font-size: 40px;
+	color: white;
+}
+
